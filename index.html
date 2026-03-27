@@ -1,0 +1,2593 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reboques Aliança 24H | Reboque e Assistência Rodoviária em Lisboa</title>
+<meta name="description" content="Serviço de reboque e assistência rodoviária 24 horas em Lisboa, com cobertura nacional e internacional. Chegamos em minutos. Ligue agora ou envie mensagem pelo WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Reboques Aliança 24H | Reboque e Assistência Rodoviária em Lisboa">
+<meta property="og:description" content="Serviço de reboque e assistência rodoviária 24 horas em Lisboa, com cobertura nacional e internacional. Chegamos em minutos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<meta name="theme-color" content="#C8102E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Outfit:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #F0F0F0;
+    background: #0A0A0A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --red: #C8102E;
+    --red-hover: #A00D24;
+    --red-dark: #7A0A1B;
+    --red-glow: rgba(200,16,46,0.3);
+    --red-subtle: rgba(200,16,46,0.15);
+    --red-border: rgba(200,16,46,0.3);
+
+    --bg-ultra: #020202;
+    --bg-deep: #050505;
+    --bg-base: #0A0A0A;
+    --bg-alt1: #111111;
+    --bg-alt2: #1A1A1A;
+    --bg-alt3: #222222;
+    --bg-border-solid: #2A2A2A;
+
+    --border-white-10: rgba(255,255,255,0.1);
+    --border-white-5: rgba(255,255,255,0.05);
+    --surface-semi: rgba(255,255,255,0.03);
+
+    --text-white: #FFFFFF;
+    --text-light: #F0F0F0;
+    --text-secondary: #B0B0B0;
+    --text-tertiary: #808080;
+
+    --green-success: #22C55E;
+    --yellow-alert: #F59E0B;
+    --whatsapp: #25D366;
+
+    /* Light section variables */
+    --bg-white: #FFFFFF;
+    --bg-off-white: #F8F8F8;
+    --bg-light-gray: #F5F5F5;
+    --text-dark: #1A1A1A;
+    --text-dark-body: #4A4A4A;
+    --text-dark-secondary: #7A7A7A;
+    --border-light: #E0E0E0;
+    --card-light-shadow: 0 4px 24px rgba(0,0,0,0.06);
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+    --space-4xl: 80px;
+    --space-5xl: 100px;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 20px;
+    --radius-full: 9999px;
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+    --shadow-red: 0 4px 24px rgba(200,16,46,0.3);
+    --shadow-glow: 0 0 20px rgba(200,16,46,0.15);
+    --shadow-nav: 0 4px 30px rgba(0,0,0,0.3);
+
+    --max-content: 1200px;
+    --max-text: 720px;
+}
+
+/* ===== UTILITY ===== */
+.container {
+    max-width: var(--max-content);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+@media (max-width: 768px) {
+    .container { padding: 0 20px; }
+}
+
+.section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.section-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 56px);
+    color: var(--text-white);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 28px;
+}
+
+.section-sub {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: var(--max-text);
+    line-height: 1.8;
+    margin-bottom: 48px;
+}
+
+/* ===== LIGHT SECTION OVERRIDES ===== */
+.section--light {
+    background: var(--bg-white) !important;
+    border-top-color: var(--border-light) !important;
+}
+.section--light-alt {
+    background: var(--bg-off-white) !important;
+    border-top-color: var(--border-light) !important;
+}
+.section--light-gray {
+    background: var(--bg-light-gray) !important;
+    border-top-color: var(--border-light) !important;
+}
+.section--light .section-heading,
+.section--light-alt .section-heading,
+.section--light-gray .section-heading {
+    color: var(--text-dark);
+}
+.section--light .section-sub,
+.section--light-alt .section-sub,
+.section--light-gray .section-sub {
+    color: var(--text-dark-secondary);
+}
+.section--light .section-label,
+.section--light-alt .section-label,
+.section--light-gray .section-label {
+    color: var(--red);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes ping {
+    75%, 100% { transform: scale(2.5); opacity: 0; }
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== PRE-HEADER BAR ===== */
+.preheader {
+    background: var(--red);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1001;
+}
+.preheader__text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--text-white);
+    letter-spacing: 0.02em;
+}
+@media (max-width: 600px) {
+    .preheader__text { font-size: 11px; }
+}
+
+/* ===== NAV PILL (AETERNA) ===== */
+.nav-pill {
+    position: fixed;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-pill.scrolled {
+    top: 16px;
+}
+.nav-pill__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--border-white-10);
+    border-radius: var(--radius-full);
+    padding: 10px 28px;
+    box-shadow: var(--shadow-nav);
+    white-space: nowrap;
+}
+.nav-pill__logo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-white);
+}
+.nav-pill__logo span { color: var(--red); }
+.nav-pill__links {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.nav-pill__link {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-pill__link:hover {
+    color: var(--text-white);
+    background: rgba(255,255,255,0.08);
+}
+.nav-pill__24h {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.nav-pill__24h-dot {
+    width: 5px;
+    height: 5px;
+    background: var(--red);
+    border-radius: 50%;
+    position: relative;
+}
+.nav-pill__24h-dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--red);
+    border-radius: 50%;
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.nav-pill__24h-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 9px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.nav-pill__cta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--text-white);
+    background: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 8px 20px;
+    border-radius: var(--radius-full);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-feature-settings: 'ss01' on;
+}
+.nav-pill__cta:hover {
+    background: var(--red-hover);
+    transform: translateY(-1px);
+}
+.nav-pill__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 4px;
+}
+.nav-pill__hamburger span {
+    width: 18px;
+    height: 2px;
+    background: var(--text-light);
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 900px) {
+    .nav-pill__links { display: none; }
+    .nav-pill__24h { display: none; }
+    .nav-pill__hamburger { display: flex; }
+    .nav-pill__inner { gap: 12px; padding: 10px 20px; }
+}
+@media (max-width: 480px) {
+    .nav-pill__logo { font-size: 13px; }
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2,2,2,0.95);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.mobile-menu__link {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__link:hover { color: var(--red); }
+.mobile-menu__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 28px;
+    color: var(--text-white);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    text-decoration: none;
+    font-feature-settings: 'ss01' on;
+}
+.btn:active { transform: translateY(0) !important; }
+
+.btn--whatsapp {
+    background: var(--whatsapp);
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 18px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(37,211,102,0.25);
+}
+.btn--whatsapp:hover {
+    background: #1EBE57;
+    box-shadow: 0 6px 28px rgba(37,211,102,0.4);
+    transform: translateY(-2px);
+}
+.btn--whatsapp:active { background: #18A449; }
+
+.btn--secondary {
+    background: transparent;
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+.btn--secondary:hover {
+    border-color: var(--text-white);
+    background: rgba(255,255,255,0.05);
+    transform: translateY(-2px);
+}
+.btn--secondary:active { background: rgba(255,255,255,0.1); }
+
+/* Secondary button dark variant for light sections */
+.section--light .btn--secondary,
+.section--light-alt .btn--secondary,
+.section--light-gray .btn--secondary {
+    color: var(--text-dark);
+    border-color: var(--border-light);
+}
+.section--light .btn--secondary:hover,
+.section--light-alt .btn--secondary:hover,
+.section--light-gray .btn--secondary:hover {
+    border-color: var(--text-dark);
+    background: rgba(0,0,0,0.03);
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, var(--red), var(--red-hover));
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 18px 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-red);
+}
+.btn--primary:hover {
+    background: var(--red-hover);
+    box-shadow: 0 6px 32px rgba(200,16,46,0.4);
+    transform: translateY(-2px);
+}
+.btn--primary:active { background: var(--red-dark); }
+
+.btn--urgency-float {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 998;
+    background: var(--red);
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 16px 24px;
+    border-radius: var(--radius-full);
+    box-shadow: 0 4px 24px rgba(200,16,46,0.3);
+    animation: pulse 2s infinite ease-in-out;
+    border: none;
+}
+@media (max-width: 768px) {
+    .btn--urgency-float { display: inline-flex; }
+}
+
+/* ===== SECTION 01 — HERO ===== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    overflow: hidden;
+    background: var(--bg-ultra);
+}
+.hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    z-index: 0;
+}
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(2,2,2,0.85) 0%, rgba(2,2,2,0.5) 50%, rgba(2,2,2,0.2) 100%);
+}
+.hero__grid {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 30% 50%, rgba(200,16,46,0.06) 0%, transparent 60%),
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 60px 60px, 60px 60px;
+    pointer-events: none;
+}
+.hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    padding: 120px 0;
+    text-align: left;
+    margin-left: max(40px, calc((100vw - 1200px) / 2 + 40px));
+    margin-right: auto;
+}
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(200,16,46,0.1);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(200,16,46,0.2);
+    border-radius: var(--radius-full);
+    padding: 6px 16px;
+    margin-bottom: 20px;
+}
+.hero__badge-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--red);
+    border-radius: 50%;
+    position: relative;
+}
+.hero__badge-dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--red);
+    border-radius: 50%;
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.hero__badge-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.hero__h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+    margin-bottom: 32px;
+}
+.hero__h1-thin {
+    display: block;
+    font-weight: 300;
+    font-size: clamp(28px, 5vw, 60px);
+    color: var(--text-white);
+}
+.hero__h1-bold {
+    display: block;
+    font-weight: 800;
+    font-size: clamp(32px, 6vw, 72px);
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 40%, #666666 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hero__h1-sub {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: clamp(20px, 3vw, 36px);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #C8102E 0%, #FF3D5A 50%, #C8102E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+}
+.hero__sub {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 450px;
+    margin: 0 0 40px;
+    line-height: 1.8;
+}
+.hero__buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+    .hero__content {
+        padding: 100px 20px 80px;
+        text-align: center;
+        margin-left: auto;
+        max-width: 100%;
+    }
+    .hero__h1-thin { font-size: clamp(28px, 8vw, 48px); }
+    .hero__h1-bold { font-size: clamp(32px, 10vw, 56px); }
+    .hero__h1-sub { font-size: clamp(16px, 4.5vw, 24px); white-space: normal; }
+    .hero__sub { font-size: 16px; margin-left: auto; margin-right: auto; }
+    .hero__buttons { flex-direction: column; justify-content: center; }
+    .hero__buttons .btn { width: 100%; }
+    .hero__video { object-position: center center; }
+}
+
+/* Marquee */
+.hero__marquee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(200,16,46,0.04);
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 14px 0;
+    overflow: hidden;
+    z-index: 3;
+}
+.hero__marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+.hero__marquee-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    padding-right: 60px;
+}
+@media (max-width: 600px) {
+    .hero__marquee-text { font-size: 12px; }
+}
+
+/* ===== SECTION 02 — PROBLEMAS (LIGHT) ===== */
+.problemas {
+    background: var(--bg-white);
+    padding: 60px 0;
+    border-top: none;
+}
+.problemas .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 60px;
+    row-gap: 0;
+    align-items: center;
+}
+.problemas__images {
+    grid-column: 1;
+    grid-row: 1;
+}
+.problemas__images-row2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.problemas__content {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+.problemas__images {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+}
+.problemas__img-wrap {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 350px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.problemas__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Efeito "sair do frame" na terceira imagem */
+.problemas__img-wrap--overflow {
+    overflow: hidden;
+    position: relative;
+}
+.problemas__content {
+    max-width: none;
+    position: relative;
+}
+.problemas .section-heading {
+    color: var(--text-dark);
+}
+.problemas__body {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text-dark-body);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+.problemas__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+.problemas__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--text-dark-body);
+    line-height: 1.8;
+}
+.problemas__list li svg {
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.problemas__transition {
+    font-size: 18px;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.8;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-light);
+}
+.problemas__images-row2 {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+.problemas__images-row2 .problemas__img-wrap {
+    height: 350px;
+}
+@media (max-width: 900px) {
+    .problemas .container {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+        column-gap: 0;
+    }
+    .problemas__images {
+        grid-column: 1;
+        grid-row: auto;
+        order: -2;
+    }
+    .problemas__images-row2 {
+        grid-column: 1;
+        grid-row: auto;
+        order: -1;
+    }
+    .problemas__content {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+@media (max-width: 768px) {
+    .problemas { padding: var(--space-xl) 0; }
+}
+@media (max-width: 600px) {
+    .problemas__img-wrap {
+        height: 250px;
+    }
+    .problemas__images {
+        gap: 10px;
+    }
+    .problemas__img-wrap--overflow {
+        overflow: hidden;
+    }
+    .problemas__images-row2 {
+        gap: 10px;
+    }
+    .problemas__images-row2 .problemas__img-wrap {
+        height: 250px;
+    }
+}
+
+/* ===== SECTION 03 — SERVICOS (Bento Grid) ===== */
+.servicos {
+    background: var(--bg-deep);
+    padding: 60px 0;
+    border-top: none;
+    position: relative;
+}
+.servicos::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+}
+.servicos .container { position: relative; z-index: 1; }
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+.bento-grid__item--8 { grid-column: span 8; }
+.bento-grid__item--4 { grid-column: span 4; }
+.bento-grid__item--12 { grid-column: span 12; }
+
+/* Full-width card vertical layout (same as others) */
+.bento-grid__item--12.card-spotlight {
+    padding: 0;
+}
+.bento-grid__item--12.card-spotlight .card-spotlight__img {
+    display: none;
+}
+
+/* Spotlight Card */
+.card-spotlight {
+    background: var(--surface-semi);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+}
+.card-spotlight__img {
+    display: none;
+}
+/* Gradient red bar no topo de cada card */
+.card-spotlight::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #7A0A1B 0%, #C8102E 40%, #FF3D5A 60%, #C8102E 80%, #7A0A1B 100%);
+    border-radius: 20px 20px 0 0;
+    z-index: 2;
+}
+.card-spotlight__content {
+    padding: 24px 40px 40px;
+    position: relative;
+    z-index: 1;
+}
+.card-spotlight__number {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 1;
+    color: rgba(200,16,46,0.07);
+    pointer-events: none;
+    z-index: 0;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-spotlight:hover .card-spotlight__number {
+    color: rgba(200,16,46,0.15);
+}
+.card-spotlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+                rgba(200,16,46,0.12), transparent 40%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-spotlight:hover::before { opacity: 1; }
+.card-spotlight:hover { border-color: var(--red-border); }
+.card-spotlight__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text-white);
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+}
+.card-spotlight__desc {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+}
+.bento-grid .card-spotlight.bento-grid__item--8 .card-spotlight__content { padding: 28px 48px 48px; }
+.bento-grid .card-spotlight.bento-grid__item--8 .card-spotlight__title { font-size: 28px; }
+
+@media (max-width: 1024px) {
+    .bento-grid { grid-template-columns: repeat(2, 1fr); }
+    .bento-grid__item--8,
+    .bento-grid__item--4 { grid-column: span 1; }
+    .bento-grid__item--12 { grid-column: span 2; }
+}
+@media (max-width: 600px) {
+    .bento-grid { grid-template-columns: 1fr; }
+    .card-spotlight__img { height: 40px; }
+    .bento-grid .card-spotlight.bento-grid__item--8 .card-spotlight__content { padding: 20px 32px 32px; }
+    .bento-grid .card-spotlight.bento-grid__item--8 .card-spotlight__title { font-size: 22px; }
+    .bento-grid__item--12 { grid-column: span 1; }
+    .bento-grid__item--12.card-spotlight {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+    }
+    .bento-grid__item--12.card-spotlight .card-spotlight__img {
+        width: 100%;
+        height: 120px;
+        border-radius: 20px 20px 0 0;
+    }
+    .bento-grid__item--12.card-spotlight .card-spotlight__content { padding: 20px 32px 32px; }
+    .bento-grid__item--12.card-spotlight .card-spotlight__title { font-size: 22px; }
+}
+@media (max-width: 768px) {
+    .servicos { padding: var(--space-xl) 0; }
+}
+
+/* ===== SECTION 04 — PORQUE NOS (EDITORIAL FEATURE LIST) ===== */
+.porque-nos {
+    background: var(--bg-white, #FFFFFF);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+.porque-nos .container {
+    position: relative;
+    z-index: 1;
+}
+.porque-nos .section-heading {
+    color: #1A1A1A;
+}
+.porque-nos .section-sub {
+    color: #4A4A4A;
+}
+
+/* Feature List — editorial horizontal layout */
+.feature-list {
+    max-width: 100%;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 32px 0;
+    border-top: 1px solid #E0E0E0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+.feature-item:last-child {
+    border-bottom: 1px solid #E0E0E0;
+}
+.feature-item:hover {
+    padding-left: 16px;
+}
+/* Linha vermelha que aparece no hover */
+.feature-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--red);
+    transform: scaleY(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.feature-item:hover::before {
+    transform: scaleY(1);
+}
+
+.feature-item__stat {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--red);
+    min-width: 140px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+.feature-item__stat span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.feature-item__text {
+    flex: 1;
+}
+
+.feature-item__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1A1A1A;
+    margin-bottom: 6px;
+}
+
+.feature-item__desc {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #7A7A7A;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+/* Responsivo — feature list */
+@media (max-width: 768px) {
+    .porque-nos { padding: 60px 0; }
+    .feature-item {
+        gap: 24px;
+        padding: 24px 0;
+    }
+    .feature-item__stat {
+        font-size: 36px;
+        min-width: 100px;
+    }
+    .feature-item__title { font-size: 18px; }
+}
+@media (max-width: 480px) {
+    .porque-nos { padding: var(--space-xl) 0; }
+    .feature-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .feature-item__stat {
+        min-width: auto;
+    }
+    .feature-item:hover {
+        padding-left: 12px;
+    }
+}
+
+/* ===== SECTION 05 — COMO FUNCIONA ===== */
+.como-funciona {
+    background: var(--bg-deep);
+    padding: 60px 0;
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    position: relative;
+}
+.steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: calc(16.66% + 30px);
+    right: calc(16.66% + 30px);
+    height: 2px;
+    border-top: 2px dashed var(--border-white-10);
+}
+.step-item {
+    text-align: center;
+    position: relative;
+}
+.step-item__circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.step-item__title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text-white);
+    margin-bottom: 10px;
+}
+.step-item__desc {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+    .como-funciona { padding: var(--space-xl) 0; }
+    .steps-grid { grid-template-columns: 1fr; gap: 40px; }
+    .steps-grid::before { display: none; }
+}
+
+/* ===== SECTION 06 — NUMEROS ===== */
+.numeros {
+    background: var(--red);
+    padding: 40px 0;
+    border-top: none;
+}
+.numeros .section-heading { color: #fff; }
+.numeros .section-sub { color: rgba(255,255,255,0.8); }
+.numeros .section-label { color: rgba(255,255,255,0.6); }
+.counters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+.counter-item { position: relative; }
+.counter-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+}
+.counter-item__number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--text-white);
+    line-height: 1;
+}
+.counter-item__label {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+    .numeros { padding: var(--space-xl) 0; }
+    .counters-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .counter-item:not(:last-child)::after { display: none; }
+    .counter-item__number { font-size: 36px; }
+}
+@media (max-width: 480px) {
+    .counters-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== SECTION 07 — DEPOIMENTOS (LIGHT) ===== */
+.depoimentos {
+    background: var(--bg-white);
+    padding: 60px 0;
+    border-top: none;
+}
+.depoimentos .section-heading {
+    color: var(--text-dark);
+}
+.depoimentos .section-sub {
+    color: var(--text-dark-secondary);
+}
+.depoimentos__google {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.depoimentos__google-icon {
+    width: 20px;
+    height: 20px;
+}
+.depoimentos__google-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--text-dark-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.depoimentos__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.card-testimonial {
+    background: var(--bg-white);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--card-light-shadow);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-testimonial:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.card-testimonial__stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+.card-testimonial__star {
+    width: 20px;
+    height: 20px;
+    color: var(--yellow-alert);
+}
+.card-testimonial__text {
+    font-size: 16px;
+    color: var(--text-dark-body);
+    font-style: italic;
+    line-height: 1.8;
+}
+.card-testimonial__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+.card-testimonial__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-off-white);
+    border: 2px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--red);
+}
+.card-testimonial__info {}
+.card-testimonial__name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+.card-testimonial__source {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--text-dark-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+@media (max-width: 768px) {
+    .depoimentos { padding: var(--space-xl) 0; }
+    .depoimentos__grid { grid-template-columns: 1fr; }
+}
+
+/* ===== SECTION 08 — FAQ ===== */
+.faq {
+    background: var(--bg-deep);
+    padding: 60px 0;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    position: relative;
+    overflow: hidden;
+}
+.faq::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('img/porsche.jpeg') center/cover no-repeat;
+    filter: grayscale(100%);
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+}
+.faq .container { position: relative; z-index: 1; }
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.faq-item {
+    background: var(--bg-alt2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-item.active { background: var(--bg-alt3); }
+.faq-question {
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-question:hover { background: var(--bg-alt3); }
+.faq-question__text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-white);
+    flex: 1;
+    padding-right: 16px;
+}
+.faq-question__icon {
+    width: 20px;
+    height: 20px;
+    color: var(--text-tertiary);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+.faq-item.active .faq-question__icon { transform: rotate(180deg); }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-answer__inner {
+    padding: 0 28px 24px;
+    border-top: 1px solid var(--border-white-10);
+    padding-top: 20px;
+}
+.faq-answer__text {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+.faq-item.active .faq-answer { max-height: 300px; }
+@media (max-width: 768px) {
+    .faq { padding: var(--space-xl) 0; }
+}
+@media (max-width: 600px) {
+    .faq-question__text { font-size: 16px; }
+    .faq-question { padding: 20px; }
+    .faq-answer__inner { padding: 0 20px 20px; padding-top: 16px; }
+}
+
+/* ===== SECTION 09 — CTA FINAL ===== */
+.cta-final {
+    background: var(--bg-ultra);
+    padding: 60px 0;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.cta-final::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(200,16,46,0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.cta-final .container { position: relative; z-index: 1; }
+.cta-final__body {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+.cta-final__buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.cta-final__support {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+@media (max-width: 768px) {
+    .cta-final { padding: var(--space-xl) 0; }
+}
+@media (max-width: 600px) {
+    .cta-final__buttons { flex-direction: column; align-items: center; }
+    .cta-final__buttons .btn { width: 100%; }
+}
+
+/* ===== GALERIA / CARROSSEL (LIGHT) ===== */
+.galeria {
+    background: var(--bg-light-gray);
+    padding: 60px 0;
+    border-top: none;
+}
+.galeria .section-heading {
+    color: var(--text-dark);
+}
+.galeria .section-sub {
+    color: var(--text-dark-secondary);
+}
+
+/* Carousel wrapper — full-width, fora do container */
+.carousel-wrapper {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: carouselScroll 45s linear infinite;
+}
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+@keyframes carouselScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.carousel-track img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    box-shadow: var(--card-light-shadow);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.carousel-track img:hover {
+    transform: scale(1.03);
+}
+
+/* Fade/shadow nas laterais */
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+.carousel-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-light-gray), transparent);
+}
+.carousel-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-light-gray), transparent);
+}
+
+@media (max-width: 768px) {
+    .galeria { padding: var(--space-xl) 0; }
+    .carousel-track img {
+        width: 280px;
+        height: 200px;
+    }
+    .carousel-wrapper::before,
+    .carousel-wrapper::after {
+        width: 60px;
+    }
+}
+@media (max-width: 480px) {
+    .carousel-track img {
+        width: 240px;
+        height: 170px;
+    }
+    .carousel-wrapper::before,
+    .carousel-wrapper::after {
+        width: 40px;
+    }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: var(--bg-ultra);
+    padding: 60px 0;
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+.footer__inner {
+    text-align: center;
+}
+.footer__brand {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-white);
+    margin-bottom: 12px;
+}
+.footer__brand span { color: var(--red); }
+.footer__text {
+    font-size: 14px;
+    color: var(--text-tertiary);
+    margin-bottom: 8px;
+}
+.footer__links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.footer__link {
+    font-size: 14px;
+    color: var(--text-secondary);
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__link:hover { color: var(--text-white); }
+.footer__copy {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--text-tertiary);
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    letter-spacing: 0.15em;
+}
+
+/* ===== WHATSAPP SVG ICON ===== */
+.icon-whatsapp { width: 20px; height: 20px; fill: currentColor; }
+.icon-phone { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ===== DECORATIVE GEOMETRIC SHAPES ===== */
+
+/* --- SECTION 02: Problemas (light bg) --- */
+.problemas {
+    position: relative;
+    overflow: hidden;
+}
+.problemas .container {
+    position: relative;
+    z-index: 1;
+}
+.problemas::after {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(200,16,46,0.07);
+    pointer-events: none;
+    z-index: 0;
+}
+.problemas::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #F0F0F0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- SECTION 03: Servicos (dark bg) — radial glow top-left --- */
+.servicos::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,16,46,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- SECTION 04: Porque Nos (light bg) — subtle gray blob bottom-right --- */
+.porque-nos::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #F0F0F0 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- SECTION 05: Como Funciona (dark bg) — radial glow center-right --- */
+.como-funciona {
+    position: relative;
+    overflow: hidden;
+}
+.como-funciona::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,16,46,0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+.como-funciona .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- SECTION 07: Depoimentos (light bg) --- */
+.depoimentos {
+    position: relative;
+    overflow: hidden;
+}
+.depoimentos .container {
+    position: relative;
+    z-index: 1;
+}
+.depoimentos::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- SECTION 09: CTA Final (ultra-dark bg) — twin red glows --- */
+.cta-final::after {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,16,46,0.12) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+/* CTA Final already has ::before for the centered glow, add second blob via box-shadow trick on ::after */
+
+
+/* ===== WAVE SEPARATORS ===== */
+.wave-separator {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    line-height: 0;
+    margin: -1px 0;
+    z-index: 2;
+}
+.wave-separator svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* ===== RESPONSIVE: Blobs & Waves ===== */
+@media (max-width: 768px) {
+    .problemas::after {
+        width: 180px;
+        height: 180px;
+        top: -50px;
+        right: -50px;
+    }
+    .problemas::before {
+        width: 100px;
+        height: 100px;
+        bottom: -30px;
+        left: -30px;
+    }
+    .porque-nos::after {
+        width: 150px;
+        height: 150px;
+        bottom: -40px;
+        right: -40px;
+    }
+    .depoimentos::after {
+        width: 130px;
+        height: 130px;
+        top: -40px;
+        left: -40px;
+    }
+    .wave-separator {
+        height: 40px;
+    }
+    .wave-separator svg {
+        height: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .problemas::after,
+    .problemas::before {
+        display: none;
+    }
+    .wave-separator {
+        height: 30px;
+    }
+    .wave-separator svg {
+        height: 30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- SVG Sprite (hidden) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-alert-triangle" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- Service Icons (Premium, stroke-width 1.5) -->
+    <symbol id="icon-truck" viewBox="0 0 24 24">
+        <!-- Caminhão reboque detalhado: cabine com janela + plataforma + rodas -->
+        <path d="M1 4h14v12H1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15 8h3.5l3.5 4v4h-7V8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.5 9.5h1.5l2 2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="15" y1="11" x2="15" y2="16" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M1 10h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M3 4v-1h10v1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="5.5" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="5.5" cy="18" r="0.5" fill="currentColor"/>
+        <circle cx="18.5" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="18.5" cy="18" r="0.5" fill="currentColor"/>
+        <path d="M7.5 16h7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-wrench" viewBox="0 0 24 24">
+        <!-- Chave inglesa + engrenagem combinados -->
+        <circle cx="16" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="16" cy="8" r="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M13.17 10.83L7.5 16.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M4.5 19.5l3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M7.5 16.5l-1.5 1.5-2.5-2.5 1.5-1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.5 17.5l-1 1a1 1 0 000 1.41l.59.59a1 1 0 001.41 0l1-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Detalhes da engrenagem (dentes) -->
+        <path d="M16 4v-.5M16 12.5V12M20 8h.5M11.5 8H12M18.83 5.17l.35-.35M13.17 10.83l-.35.35M18.83 10.83l.35.35M13.17 5.17l-.35-.35" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-circle" viewBox="0 0 24 24">
+        <!-- Pneu/roda real: pneu exterior + jante interior + raios -->
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <!-- Raios da jante -->
+        <line x1="12" y1="5.5" x2="12" y2="9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="12" y1="14.5" x2="12" y2="18.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="5.5" y1="12" x2="9.5" y2="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="14.5" y1="12" x2="18.5" y2="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="7.4" y1="7.4" x2="10.2" y2="10.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="13.8" y1="13.8" x2="16.6" y2="16.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-fuel" viewBox="0 0 24 24">
+        <!-- Bomba de combustível detalhada com mangueira e gota -->
+        <rect x="4" y="4" width="10" height="17" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="6" y="7" width="6" height="4" rx="0.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M4 21h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M14 9l2-1.5a1.5 1.5 0 012.5 1.12V17.5a1.5 1.5 0 01-1.5 1.5H16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="17.5" cy="14" r="0.75" fill="currentColor"/>
+        <!-- Gota de combustível -->
+        <path d="M9 15.5c0 1.1-.67 2-1.5 2S6 16.6 6 15.5C6 14.4 7.5 13 7.5 13s1.5 1.4 1.5 2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Indicador no topo -->
+        <path d="M7 4V2.5M11 4V2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24">
+        <!-- Globo detalhado com meridianos + seta de rota -->
+        <circle cx="11" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M2 12h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M2 8h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2" opacity="0.5"/>
+        <path d="M2 16h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2" opacity="0.5"/>
+        <path d="M11 3a13 13 0 013.5 9 13 13 0 01-3.5 9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M11 3a13 13 0 00-3.5 9 13 13 0 003.5 9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <!-- Seta de rota -->
+        <path d="M18 5l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 8h-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24">
+        <!-- Porta com chave inserida -->
+        <rect x="3" y="2" width="13" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="13" cy="11" r="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="13" y1="12.5" x2="13" y2="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Chave inserida na fechadura -->
+        <path d="M16 11h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M20 11h1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M20 11v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M22 9.5v3a1.5 1.5 0 01-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Detalhe da maçaneta -->
+        <circle cx="13" cy="11" r="0.5" fill="currentColor"/>
+        <!-- Linha da porta -->
+        <path d="M3 6h13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+    </symbol>
+    <!-- Differencial Icons (Premium, stroke-width 1.5) -->
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+        <!-- Relógio detalhado com ponteiros + marcas de hora + 24 -->
+        <circle cx="12" cy="13" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 7v6l3.5 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Marcas de hora -->
+        <line x1="12" y1="4" x2="12" y2="5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="12" y1="20.5" x2="12" y2="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="3" y1="13" x2="4.5" y2="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="19.5" y1="13" x2="21" y2="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Centro -->
+        <circle cx="12" cy="13" r="1" fill="currentColor"/>
+        <!-- Badge "24" -->
+        <rect x="16" y="1" width="7" height="5" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="19.5" y="4.8" font-family="sans-serif" font-size="3.5" font-weight="700" fill="currentColor" text-anchor="middle">24</text>
+    </symbol>
+    <symbol id="icon-zap" viewBox="0 0 24 24">
+        <!-- Cronómetro/velocímetro com ponteiro -->
+        <circle cx="12" cy="13" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <!-- Botão topo -->
+        <path d="M12 2v2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M10 1h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Botão lateral -->
+        <path d="M19.5 5.5l1.5-1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Ponteiro (apontando para posição rápida) -->
+        <path d="M12 13l4-5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="13" r="1.2" fill="currentColor"/>
+        <!-- Marcas do dial -->
+        <line x1="12" y1="4" x2="12" y2="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="5" y1="8" x2="6.5" y2="9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="3" y1="13" x2="5" y2="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="5" y1="18" x2="6.5" y2="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="19" y1="8" x2="17.5" y2="9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="21" y1="13" x2="19" y2="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="19" y1="18" x2="17.5" y2="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+        <!-- Etiqueta de preço com check -->
+        <path d="M20.5 7.28V5.5a2 2 0 00-2-2H5.5a2 2 0 00-2 2v4.72a2 2 0 00.59 1.42l7.5 7.5a2 2 0 002.82 0l6.09-6.09a2 2 0 000-2.82l-.5-.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="7.5" cy="7.5" r="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="7.5" cy="7.5" r="0.5" fill="currentColor"/>
+        <!-- Check mark dentro -->
+        <path d="M10 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Linha pontilhada (preço) -->
+        <path d="M5 11h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="1.5 1.5"/>
+    </symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24">
+        <!-- Engrenagem premium com estrela no centro -->
+        <path d="M12 1l1.5 2.5h3l.5 3 2.5 1.5-1 2.8L20 13.5l-2 2-.5 3h-3L12 21l-2.5-2.5h-3l-.5-3-2.5-1.5 1-2.8L3 11.5l2-2 .5-3h3L12 1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="12" cy="11" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <!-- Estrela no centro -->
+        <path d="M12 8l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2-1.45-1.4 2-.3L12 8z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24">
+        <!-- Pin de mapa detalhado com setas de cobertura expandindo -->
+        <path d="M12 22s-7-5.75-7-11.25a7 7 0 0114 0C19 16.25 12 22 12 22z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="12" cy="10.75" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="12" cy="10.75" r="0.75" fill="currentColor"/>
+        <!-- Setas de expansão (cobertura) -->
+        <path d="M4 6l-2-2m0 0l2-2m-2 2h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 6l2-2m0 0l-2-2m2 2h-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <!-- Google icon -->
+    <symbol id="icon-google" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- PRE-HEADER BAR -->
+<div class="preheader">
+    <div class="container">
+        <p class="preheader__text">Assistência Rodoviária 24h | Lisboa e Todo o País</p>
+    </div>
+</div>
+
+<!-- NAV PILL -->
+<nav class="nav-pill" id="navPill">
+    <div class="nav-pill__inner">
+        <a href="#hero" class="nav-pill__logo">Reboques <span>Aliança</span></a>
+        <div class="nav-pill__links">
+            <a href="#servicos" class="nav-pill__link">Serviços</a>
+            <a href="#porque-nos" class="nav-pill__link">Porque Nós</a>
+            <a href="#como-funciona" class="nav-pill__link">Como Funciona</a>
+            <a href="#depoimentos" class="nav-pill__link">Depoimentos</a>
+            <a href="#faq" class="nav-pill__link">FAQ</a>
+        </div>
+        <div class="nav-pill__24h">
+            <div class="nav-pill__24h-dot"></div>
+            <span class="nav-pill__24h-text">24H</span>
+        </div>
+        <a href="https://wa.me/351XXXXXXXXX" class="nav-pill__cta" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="nav-pill__hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Fechar menu">&times;</button>
+    <a href="#servicos" class="mobile-menu__link">Serviços</a>
+    <a href="#porque-nos" class="mobile-menu__link">Porque Nós</a>
+    <a href="#como-funciona" class="mobile-menu__link">Como Funciona</a>
+    <a href="#depoimentos" class="mobile-menu__link">Depoimentos</a>
+    <a href="#faq" class="mobile-menu__link">FAQ</a>
+    <a href="https://wa.me/351XXXXXXXXX" class="btn btn--whatsapp" target="_blank" rel="noopener">
+        <svg class="icon-whatsapp"><use href="#icon-whatsapp"/></svg>
+        Chamar Reboque
+    </a>
+</div>
+
+<!-- ===== SECTION 01 — HERO ===== -->
+<section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline>
+        <source src="video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__content">
+        <div class="hero__badge">
+            <div class="hero__badge-dot"></div>
+            <span class="hero__badge-text">24H Disponível</span>
+        </div>
+        <h1 class="hero__h1"><span class="hero__h1-thin">Ficou Parado</span><span class="hero__h1-bold">Na Estrada?</span><span class="hero__h1-sub">Chegamos em Minutos.</span></h1>
+        <p class="hero__sub">Serviço de reboque e assistência rodoviária em Lisboa, com cobertura nacional e internacional. Disponível 24 horas, 7 dias por semana. Ligue agora ou envie mensagem pelo WhatsApp.</p>
+        <div class="hero__buttons">
+            <a href="https://wa.me/351XXXXXXXXX" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                <svg class="icon-whatsapp"><use href="#icon-whatsapp"/></svg>
+                Chamar Reboque pelo WhatsApp
+            </a>
+            <a href="tel:+351XXXXXXXXX" class="btn btn--secondary">
+                <svg class="icon-phone"><use href="#icon-phone"/></svg>
+                Ligar Agora
+            </a>
+        </div>
+    </div>
+    <div class="hero__marquee">
+        <div class="hero__marquee-track">
+            <span class="hero__marquee-text">Reboque 24H --- Assistência Rodoviária --- Lisboa --- Cobertura Nacional --- Transporte Internacional --- Assistência Mecânica --- Troca de Pneus --- Reboque 24H --- Assistência Rodoviária --- Lisboa --- Cobertura Nacional --- Transporte Internacional --- Assistência Mecânica --- Troca de Pneus --- </span>
+            <span class="hero__marquee-text">Reboque 24H --- Assistência Rodoviária --- Lisboa --- Cobertura Nacional --- Transporte Internacional --- Assistência Mecânica --- Troca de Pneus --- Reboque 24H --- Assistência Rodoviária --- Lisboa --- Cobertura Nacional --- Transporte Internacional --- Assistência Mecânica --- Troca de Pneus --- </span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 02 — PROBLEMAS / DORES (FUNDO BRANCO) ===== -->
+<section class="problemas" id="problemas">
+    <div class="container">
+        <!-- Lado esquerdo: 3 imagens verticais -->
+        <div class="problemas__images fade-in">
+            <div class="problemas__img-wrap">
+                <img src="img/van-estrada.jpeg" alt="Assistência rodoviária - Jheriel ao lado do reboque" loading="lazy">
+            </div>
+            <div class="problemas__img-wrap">
+                <img src="img/carro-branco.jpeg" alt="Viatura rebocada em Lisboa" loading="lazy">
+            </div>
+            <div class="problemas__img-wrap problemas__img-wrap--overflow">
+                <img src="img/ferrari.jpeg" alt="Reboque profissional de viaturas premium" loading="lazy">
+            </div>
+        </div>
+        <div class="problemas__images-row2 fade-in">
+            <div class="problemas__img-wrap">
+                <img src="img/barco.jpeg" alt="Transporte de embarcações" loading="lazy">
+            </div>
+            <div class="problemas__img-wrap">
+                <img src="img/citroen-vintage.jpeg" alt="Reboque de viaturas clássicas" loading="lazy">
+            </div>
+            <div class="problemas__img-wrap">
+                <img src="img/porsche.jpeg" alt="Reboque de viaturas premium" loading="lazy">
+            </div>
+        </div>
+        <!-- Lado direito: conteúdo -->
+        <div class="problemas__content fade-in">
+            <span class="section-label">O problema</span>
+            <h2 class="section-heading">Sabemos o que sente quando a sua viatura o deixa ficar na estrada.</h2>
+            <p class="problemas__body">Uma avaria nunca acontece na melhor altura. Pode ser a meio de uma viagem, a caminho do trabalho ou numa estrada desconhecida, de noite. O stress instala-se rapidamente.</p>
+            <ul class="problemas__list">
+                <li>
+                    <svg><use href="#icon-alert-triangle"/></svg>
+                    A viatura parou e não sabe o que fazer
+                </li>
+                <li>
+                    <svg><use href="#icon-alert-triangle"/></svg>
+                    Está num local isolado ou perigoso e precisa de ajuda urgente
+                </li>
+                <li>
+                    <svg><use href="#icon-alert-triangle"/></svg>
+                    Furou um pneu e não tem ferramentas ou condições para o trocar
+                </li>
+                <li>
+                    <svg><use href="#icon-alert-triangle"/></svg>
+                    Ficou sem combustível longe de um posto de abastecimento
+                </li>
+                <li>
+                    <svg><use href="#icon-alert-triangle"/></svg>
+                    Precisa de transportar a viatura para a oficina, mas não sabe como
+                </li>
+                <li>
+                    <svg><use href="#icon-alert-triangle"/></svg>
+                    O tempo passa e ninguém atende o telefone de outras empresas
+                </li>
+            </ul>
+            <p class="problemas__transition">Não precisa de enfrentar esta situação sozinho. Estamos prontos para o ajudar, a qualquer hora, em qualquer lugar.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Wave: Problemas (white) -> Servicos (dark) -->
+<div class="wave-separator" style="background:#FFFFFF;">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none">
+        <path d="M0,0 C480,50 960,10 1440,45 L1440,60 L0,60 Z" fill="#050505"/>
+    </svg>
+</div>
+
+<!-- ===== SECTION 03 — SERVICOS (Bento Grid) ===== -->
+<section class="servicos" id="servicos">
+    <div class="container">
+        <div class="fade-in">
+            <span class="section-label">Os nossos serviços</span>
+            <h2 class="section-heading">Tudo o que precisa para voltar à estrada, num só contacto.</h2>
+            <p class="section-sub">Oferecemos uma gama completa de serviços de assistência rodoviária para resolver qualquer imprevisto.</p>
+        </div>
+        <div class="bento-grid">
+            <!-- Card 1: Reboque (destaque) -->
+            <div class="card-spotlight bento-grid__item--8 fade-in">
+                <span class="card-spotlight__number">01</span>
+                <div class="card-spotlight__content">
+                    <h3 class="card-spotlight__title">Reboque e Transporte de Viaturas</h3>
+                    <p class="card-spotlight__desc">Rebocamos a sua viatura até à oficina, à sua residência ou qualquer outro destino. Equipamento moderno para veículos ligeiros e pesados.</p>
+                </div>
+            </div>
+            <!-- Card 2: Assistência Mecânica -->
+            <div class="card-spotlight bento-grid__item--4 fade-in">
+                <span class="card-spotlight__number">02</span>
+                <div class="card-spotlight__content">
+                    <h3 class="card-spotlight__title">Assistência Mecânica no Local</h3>
+                    <p class="card-spotlight__desc">A nossa equipa desloca-se até si para diagnosticar e resolver avarias simples diretamente na estrada, sem necessidade de reboque.</p>
+                </div>
+            </div>
+            <!-- Card 3: Troca de Pneus -->
+            <div class="card-spotlight bento-grid__item--4 fade-in">
+                <span class="card-spotlight__number">03</span>
+                <div class="card-spotlight__content">
+                    <h3 class="card-spotlight__title">Troca de Pneus na Estrada</h3>
+                    <p class="card-spotlight__desc">Furou um pneu? Tratamos da substituição no local, de forma rápida e segura, para que possa continuar a sua viagem.</p>
+                </div>
+            </div>
+            <!-- Card 4: Combustivel -->
+            <div class="card-spotlight bento-grid__item--4 fade-in">
+                <span class="card-spotlight__number">04</span>
+                <div class="card-spotlight__content">
+                    <h3 class="card-spotlight__title">Entrega de Combustível</h3>
+                    <p class="card-spotlight__desc">Ficou sem combustível? Levamos-lhe o combustível necessário para que possa chegar ao posto de abastecimento mais próximo.</p>
+                </div>
+            </div>
+            <!-- Card 5: Transporte Nacional/Internacional -->
+            <div class="card-spotlight bento-grid__item--4 fade-in">
+                <span class="card-spotlight__number">05</span>
+                <div class="card-spotlight__content">
+                    <h3 class="card-spotlight__title">Transporte de Viaturas Nacional e Internacional</h3>
+                    <p class="card-spotlight__desc">Precisa de transportar a sua viatura para outra cidade ou outro país? Fazemos transporte de veículos para qualquer ponto de Portugal e da Europa.</p>
+                </div>
+            </div>
+            <!-- Card 6: Abertura de Portas -->
+            <div class="card-spotlight bento-grid__item--12 fade-in">
+                <span class="card-spotlight__number">06</span>
+                <div class="card-spotlight__content">
+                    <h3 class="card-spotlight__title">Abertura de Portas e Chaves Trancadas</h3>
+                    <p class="card-spotlight__desc">Deixou as chaves dentro da viatura? A nossa equipa resolve a situação sem danificar o seu veículo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 04 — PORQUE NOS (EDITORIAL FEATURE LIST) ===== -->
+<section class="porque-nos" id="porque-nos">
+    <div class="container">
+        <span class="section-label">Porque Nós Escolher</span>
+        <h2 class="section-heading">Porque é que milhares de motoristas confiam em nós?</h2>
+        <p class="section-sub">Quando está numa situação de emergência, cada minuto conta. Por isso, trabalhamos para ser a solução mais rápida e fiável que pode encontrar.</p>
+
+        <div class="feature-list">
+            <div class="feature-item fade-in">
+                <div class="feature-item__stat">24/7</div>
+                <div class="feature-item__text">
+                    <h3 class="feature-item__title">Disponíveis Todo o Ano</h3>
+                    <p class="feature-item__desc">Noites, fins de semana, feriados. Estamos sempre operacionais para responder a qualquer emergência rodoviária.</p>
+                </div>
+            </div>
+            <div class="feature-item fade-in">
+                <div class="feature-item__stat">10-60<span>min</span></div>
+                <div class="feature-item__text">
+                    <h3 class="feature-item__title">Tempo de Resposta</h3>
+                    <p class="feature-item__desc">Rapidez é a nossa prioridade. Tempo médio de chegada inferior a 30 minutos na área metropolitana de Lisboa.</p>
+                </div>
+            </div>
+            <div class="feature-item fade-in">
+                <div class="feature-item__stat">0</div>
+                <div class="feature-item__text">
+                    <h3 class="feature-item__title">Custos Ocultos</h3>
+                    <p class="feature-item__desc">Apresentamos sempre orçamento antes de iniciar. Sem surpresas, sem custos ocultos.</p>
+                </div>
+            </div>
+            <div class="feature-item fade-in">
+                <div class="feature-item__stat">PRO</div>
+                <div class="feature-item__text">
+                    <h3 class="feature-item__title">Equipamento Moderno</h3>
+                    <p class="feature-item__desc">Investimos em tecnologia recente e formação contínua da nossa equipa. Serviço rápido, seguro e sem riscos para a sua viatura.</p>
+                </div>
+            </div>
+            <div class="feature-item fade-in">
+                <div class="feature-item__stat">100%</div>
+                <div class="feature-item__text">
+                    <h3 class="feature-item__title">Cobertura Nacional e Internacional</h3>
+                    <p class="feature-item__desc">Atuamos em Lisboa, na região metropolitana e em todo o país. Para transferências internacionais, transportamos a sua viatura para qualquer destino na Europa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 05 — COMO FUNCIONA ===== -->
+<section class="como-funciona" id="como-funciona">
+    <div class="container">
+        <div class="fade-in" style="text-align:center;">
+            <span class="section-label">Como funciona</span>
+            <h2 class="section-heading" style="text-align:center;">3 Passos para Resolver o Seu Problema</h2>
+            <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;">Simples, rápido e sem complicações. Veja como funciona:</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-item fade-in">
+                <div class="step-item__circle">1</div>
+                <h3 class="step-item__title">Contacte-nos</h3>
+                <p class="step-item__desc">Ligue ou envie mensagem pelo WhatsApp. Diga-nos onde está e qual é o problema. Respondemos de imediato.</p>
+            </div>
+            <div class="step-item fade-in">
+                <div class="step-item__circle">2</div>
+                <h3 class="step-item__title">A Equipa Vai ao Seu Encontro</h3>
+                <p class="step-item__desc">Enviamos um profissional com o equipamento adequado à sua localização. Tempo médio de chegada: 10 a 60 minutos.</p>
+            </div>
+            <div class="step-item fade-in">
+                <div class="step-item__circle">3</div>
+                <h3 class="step-item__title">Problema Resolvido</h3>
+                <p class="step-item__desc">A sua viatura é rebocada ou reparada no local. Volta à estrada com segurança e tranquilidade.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 06 — NUMEROS ===== -->
+<section class="numeros" id="numeros">
+    <div class="container">
+        <div class="fade-in" style="text-align:center;margin-bottom:48px;">
+            <span class="section-label">Resultados</span>
+            <h2 class="section-heading" style="text-align:center;">Números Que Falam por Nós</h2>
+            <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;color:rgba(255,255,255,0.8);">A confiança dos nossos clientes é o nosso maior trunfo.</p>
+        </div>
+        <div class="counters-grid">
+            <div class="counter-item fade-in">
+                <div class="counter-item__number" data-target="2500">+2.500</div>
+                <div class="counter-item__label">Viaturas Rebocadas</div>
+            </div>
+            <div class="counter-item fade-in">
+                <div class="counter-item__number">30 min</div>
+                <div class="counter-item__label">Tempo Médio de Chegada</div>
+            </div>
+            <div class="counter-item fade-in">
+                <div class="counter-item__number">24/7</div>
+                <div class="counter-item__label">Disponibilidade Total</div>
+            </div>
+            <div class="counter-item fade-in">
+                <div class="counter-item__number">100%</div>
+                <div class="counter-item__label">Cobertura Nacional</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 07 — DEPOIMENTOS (FUNDO BRANCO) ===== -->
+<section class="depoimentos" id="depoimentos">
+    <div class="container">
+        <div class="fade-in">
+            <span class="section-label">Avaliações</span>
+            <h2 class="section-heading">O Que Dizem os Nossos Clientes</h2>
+            <p class="section-sub">Quem já precisou de nós, recomenda.</p>
+            <div class="depoimentos__google">
+                <svg class="depoimentos__google-icon"><use href="#icon-google"/></svg>
+                <span class="depoimentos__google-text">Avaliações do Google</span>
+            </div>
+        </div>
+        <div class="depoimentos__grid">
+            <!-- Depoimento 1 -->
+            <div class="card-testimonial fade-in">
+                <div class="card-testimonial__stars">
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                </div>
+                <p class="card-testimonial__text">"Serviço rápido e profissional. Muito simpático e eficiente. Guardei o contacto para futuras ocasiões. Recomendo!"</p>
+                <div class="card-testimonial__author">
+                    <div class="card-testimonial__avatar">R</div>
+                    <div class="card-testimonial__info">
+                        <div class="card-testimonial__name">Ricardo Martins Pereira</div>
+                        <div class="card-testimonial__source">Google Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Depoimento 2 -->
+            <div class="card-testimonial fade-in">
+                <div class="card-testimonial__stars">
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                </div>
+                <p class="card-testimonial__text">"Reboque muito bom, alegre e simpático. Nota-se que sabe o que faz, com muita segurança."</p>
+                <div class="card-testimonial__author">
+                    <div class="card-testimonial__avatar">L</div>
+                    <div class="card-testimonial__info">
+                        <div class="card-testimonial__name">Lourenço Almeida</div>
+                        <div class="card-testimonial__source">Google Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Depoimento 3 -->
+            <div class="card-testimonial fade-in">
+                <div class="card-testimonial__stars">
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                </div>
+                <p class="card-testimonial__text">"Bela prestação de serviço, generosos e atenciosos."</p>
+                <div class="card-testimonial__author">
+                    <div class="card-testimonial__avatar">Z</div>
+                    <div class="card-testimonial__info">
+                        <div class="card-testimonial__name">Zaan Music VEVO</div>
+                        <div class="card-testimonial__source">Google Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Depoimento 4 -->
+            <div class="card-testimonial fade-in">
+                <div class="card-testimonial__stars">
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                    <svg class="card-testimonial__star"><use href="#icon-star"/></svg>
+                </div>
+                <p class="card-testimonial__text">"Serviço 5 estrelas, super acessível e simpático. 100% recomendável."</p>
+                <div class="card-testimonial__author">
+                    <div class="card-testimonial__avatar">H</div>
+                    <div class="card-testimonial__info">
+                        <div class="card-testimonial__name">Henrique Pereira</div>
+                        <div class="card-testimonial__source">Google Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wave: Depoimentos (white) -> Galeria (light-gray) -->
+<div class="wave-separator" style="background:#FFFFFF;">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none">
+        <path d="M0,0 C400,0 800,55 1440,15 L1440,60 L0,60 Z" fill="#F5F5F5"/>
+    </svg>
+</div>
+
+<!-- ===== GALERIA DE TRABALHOS (FUNDO CLARO) — CARROSSEL ===== -->
+<section class="galeria" id="galeria">
+    <div class="container">
+        <div class="fade-in">
+            <span class="section-label">Os nossos trabalhos</span>
+            <h2 class="section-heading">Serviços Realizados</h2>
+            <p class="section-sub">Veja a variedade de veículos e situações em que já atuámos.</p>
+        </div>
+    </div>
+    <!-- Carrossel full-width com loop infinito -->
+    <div class="carousel-wrapper">
+        <div class="carousel-track">
+            <!-- Originais -->
+            <img src="img/barco.jpeg" alt="Reboque de barco na plataforma - serviço de transporte marítimo" loading="lazy" width="800" height="600">
+            <img src="img/van-estrada.jpeg" alt="Van preta na estrada com Jheriel ao lado - assistência rodoviária" loading="lazy" width="800" height="600">
+            <img src="img/carro-branco.jpeg" alt="Peugeot branco rebocado - serviço de reboque em Lisboa" loading="lazy" width="800" height="600">
+            <img src="img/citroen-vintage.jpeg" alt="Citroën vintage no caminhão Reboques Pinto - transporte de viaturas clássicas" loading="lazy" width="800" height="600">
+            <img src="img/porsche.jpeg" alt="Porsche 356 branco - transporte de viaturas premium" loading="lazy" width="800" height="600">
+            <img src="img/ferrari.jpeg" alt="Ferrari vermelha - transporte de viaturas de luxo" loading="lazy" width="800" height="600">
+            <!-- Duplicados para loop infinito -->
+            <img src="img/barco.jpeg" alt="Reboque de barco na plataforma - serviço de transporte marítimo" loading="lazy" width="800" height="600">
+            <img src="img/van-estrada.jpeg" alt="Van preta na estrada com Jheriel ao lado - assistência rodoviária" loading="lazy" width="800" height="600">
+            <img src="img/carro-branco.jpeg" alt="Peugeot branco rebocado - serviço de reboque em Lisboa" loading="lazy" width="800" height="600">
+            <img src="img/citroen-vintage.jpeg" alt="Citroën vintage no caminhão Reboques Pinto - transporte de viaturas clássicas" loading="lazy" width="800" height="600">
+            <img src="img/porsche.jpeg" alt="Porsche 356 branco - transporte de viaturas premium" loading="lazy" width="800" height="600">
+            <img src="img/ferrari.jpeg" alt="Ferrari vermelha - transporte de viaturas de luxo" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 08 — FAQ ===== -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="fade-in" style="text-align:center;margin-bottom:48px;">
+            <span class="section-label">Dúvidas frequentes</span>
+            <h2 class="section-heading" style="text-align:center;">Perguntas Frequentes</h2>
+            <p class="section-sub" style="margin-left:auto;margin-right:auto;text-align:center;">Tire as suas dúvidas sobre o nosso serviço de reboque e assistência rodoviária.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                    <span class="faq-question__text">Qual é o tempo médio de chegada?</span>
+                    <svg class="faq-question__icon"><use href="#icon-chevron-down"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer__inner">
+                        <p class="faq-answer__text">O nosso tempo médio de chegada é de 10 a 60 minutos, dependendo da localização e das condições de tráfego. Em Lisboa e na área metropolitana, normalmente chegamos em menos de 30 minutos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                    <span class="faq-question__text">Trabalham de noite e aos fins de semana?</span>
+                    <svg class="faq-question__icon"><use href="#icon-chevron-down"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer__inner">
+                        <p class="faq-answer__text">Sim. O nosso serviço funciona 24 horas por dia, 7 dias por semana, 365 dias por ano. Incluindo noites, fins de semana e feriados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                    <span class="faq-question__text">Quanto custa o serviço de reboque?</span>
+                    <svg class="faq-question__icon"><use href="#icon-chevron-down"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer__inner">
+                        <p class="faq-answer__text">O valor depende da distância e do tipo de serviço necessário. Apresentamos sempre um orçamento antes de iniciar qualquer trabalho, sem compromisso e sem custos ocultos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                    <span class="faq-question__text">Fazem transporte de viaturas para fora de Portugal?</span>
+                    <svg class="faq-question__icon"><use href="#icon-chevron-down"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer__inner">
+                        <p class="faq-answer__text">Sim. Realizamos transporte de veículos para qualquer destino na Europa. Contacte-nos para obter um orçamento personalizado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                    <span class="faq-question__text">Que tipos de viaturas rebocam?</span>
+                    <svg class="faq-question__icon"><use href="#icon-chevron-down"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer__inner">
+                        <p class="faq-answer__text">Rebocamos veículos ligeiros, comerciais, motociclos e, mediante orçamento, veículos pesados. O nosso equipamento está preparado para diferentes tipos de viaturas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                    <span class="faq-question__text">Como posso pagar?</span>
+                    <svg class="faq-question__icon"><use href="#icon-chevron-down"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer__inner">
+                        <p class="faq-answer__text">Aceitamos diversos métodos de pagamento. Os detalhes são combinados no momento do contacto, de forma transparente e sem surpresas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 09 — CTA FINAL ===== -->
+<section class="cta-final" id="cta-final">
+    <div class="container">
+        <div class="fade-in">
+            <span class="section-label">Precisa de ajuda?</span>
+            <h2 class="section-heading" style="text-align:center;">Precisa de Ajuda Agora? Não Espere Mais.</h2>
+            <p class="cta-final__body">Cada minuto parado na estrada é um minuto de stress e insegurança. A nossa equipa está pronta para o ajudar neste momento. Ligue ou envie mensagem pelo WhatsApp — e nós tratamos do resto.</p>
+            <div class="cta-final__buttons">
+                <a href="https://wa.me/351XXXXXXXXX" class="btn btn--whatsapp" target="_blank" rel="noopener">
+                    <svg class="icon-whatsapp"><use href="#icon-whatsapp"/></svg>
+                    Chamar Reboque pelo WhatsApp
+                </a>
+                <a href="tel:+351XXXXXXXXX" class="btn btn--secondary">
+                    <svg class="icon-phone"><use href="#icon-phone"/></svg>
+                    Ligar Agora
+                </a>
+            </div>
+            <p class="cta-final__support">Resposta imediata. Disponível 24 horas, todos os dias.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__brand">Reboques <span>Aliança</span> 24H</div>
+            <p class="footer__text">Serviço de Reboque e Assistência Rodoviária | Lisboa, Portugal</p>
+            <p class="footer__text">Disponível 24/7 | Cobertura Nacional e Internacional</p>
+            <div class="footer__links">
+                <a href="https://wa.me/351XXXXXXXXX" class="footer__link" target="_blank" rel="noopener">
+                    <svg style="width:16px;height:16px;fill:currentColor;vertical-align:middle;margin-right:4px;"><use href="#icon-whatsapp"/></svg>
+                    WhatsApp
+                </a>
+                <a href="https://instagram.com/jheriel_silva" class="footer__link" target="_blank" rel="noopener">
+                    <svg style="width:16px;height:16px;stroke:currentColor;fill:none;vertical-align:middle;margin-right:4px;"><use href="#icon-instagram"/></svg>
+                    @jheriel_silva
+                </a>
+                <a href="#" class="footer__link">Política de Privacidade</a>
+            </div>
+            <p class="footer__copy">&copy; 2026 Reboques Aliança 24H. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- CTA FLUTUANTE MOBILE -->
+<a href="https://wa.me/351XXXXXXXXX" class="btn btn--urgency-float" target="_blank" rel="noopener">
+    <svg class="icon-whatsapp" style="width:18px;height:18px;"><use href="#icon-whatsapp"/></svg>
+    Reboque Agora
+</a>
+
+<script>
+(function() {
+    'use strict';
+
+    // ===== NAV SCROLL BEHAVIOR =====
+    var navPill = document.getElementById('navPill');
+    var preheader = document.querySelector('.preheader');
+    var preheaderHeight = preheader ? preheader.offsetHeight : 0;
+
+    function handleNavScroll() {
+        if (window.scrollY > preheaderHeight) {
+            navPill.classList.add('scrolled');
+        } else {
+            navPill.classList.remove('scrolled');
+        }
+    }
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
+
+    // ===== MOBILE MENU =====
+    var hamburgerBtn = document.getElementById('hamburgerBtn');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var mobileMenuClose = document.getElementById('mobileMenuClose');
+    var mobileLinks = mobileMenu.querySelectorAll('.mobile-menu__link');
+
+    function openMobileMenu() {
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    hamburgerBtn.addEventListener('click', openMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileLinks.forEach(function(link) {
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // ===== SMOOTH SCROLL =====
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
+            if (href === '#') return;
+            var target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                var offset = 80;
+                var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: top, behavior: 'smooth' });
+            }
+        });
+    });
+
+    // ===== FAQ ACCORDION =====
+    var faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(function(item) {
+        var question = item.querySelector('.faq-question');
+        question.addEventListener('click', function() {
+            var isActive = item.classList.contains('active');
+            // Close all
+            faqItems.forEach(function(i) { i.classList.remove('active'); });
+            // Toggle current
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+        // Keyboard support
+        question.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                question.click();
+            }
+        });
+    });
+
+    // ===== SPOTLIGHT CARD EFFECT =====
+    var spotlightCards = document.querySelectorAll('.card-spotlight');
+    spotlightCards.forEach(function(card) {
+        card.addEventListener('mousemove', function(e) {
+            var rect = card.getBoundingClientRect();
+            card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+            card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+        });
+    });
+
+    // ===== INTERSECTION OBSERVER (FADE-IN) =====
+    var fadeElements = document.querySelectorAll('.fade-in');
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(function(el) {
+            observer.observe(el);
+        });
+    } else {
+        // Fallback: show all
+        fadeElements.forEach(function(el) {
+            el.classList.add('visible');
+        });
+    }
+
+})();
+</script>
+</body>
+</html>
