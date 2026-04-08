@@ -35,12 +35,12 @@ ul { list-style: none; }
 
 /* ===== CSS VARIABLES ===== */
 :root {
-    --red: #C8102E;
-    --red-hover: #A00D24;
-    --red-dark: #7A0A1B;
-    --red-glow: rgba(200,16,46,0.3);
-    --red-subtle: rgba(200,16,46,0.15);
-    --red-border: rgba(200,16,46,0.3);
+    --red: #E60101;
+    --red-hover: #C20101;
+    --red-dark: #900101;
+    --red-glow: rgba(230,1,1,0.3);
+    --red-subtle: rgba(230,1,1,0.15);
+    --red-border: rgba(230,1,1,0.3);
 
     --bg-ultra: #020202;
     --bg-deep: #050505;
@@ -1309,7 +1309,7 @@ ul { list-style: none; }
     content: '';
     position: absolute;
     inset: 0;
-    background: url('img/ferrari.jpeg') center/cover no-repeat;
+    background: url('img/collage.png') center/cover no-repeat;
     filter: grayscale(100%);
     opacity: 0.06;
     pointer-events: none;
@@ -1534,6 +1534,11 @@ ul { list-style: none; }
     font-size: 20px;
     color: var(--text-white);
     margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+.footer__brand img {
+    height: 52px;
 }
 .footer__brand span { color: var(--red); }
 .footer__text {
@@ -2104,7 +2109,7 @@ ul { list-style: none; }
                 </div>
             </div>
             <!-- Card 6: Carga de Bateria -->
-            <div class="card-spotlight bento-grid__item--8 fade-in">
+            <div class="card-spotlight bento-grid__item--12 fade-in">
                 <span class="card-spotlight__number">06</span>
                 <div class="card-spotlight__content">
                     <h3 class="card-spotlight__title">Carga de Bateria</h3>
